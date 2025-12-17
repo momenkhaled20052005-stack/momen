@@ -8,8 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: alpine-latest
+    runs-on: ubuntu-latest
   
     steps:
       - name: 'printing folder contents'
+        run: ls
+   
+      - uses: actions/checkout@v3
+
+      - name: 'printing '
         run: ls
